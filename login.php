@@ -18,7 +18,7 @@
 
     <link rel="stylesheet" href="style/style.css">
 
-    <title>oddamzmiane.pl</title>
+    <title>oddamzmiane.pl - możesz wymieniać się zmianami</title>
 
 </head>
 
