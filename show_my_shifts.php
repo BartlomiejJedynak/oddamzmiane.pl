@@ -210,7 +210,7 @@
                                 <!-- <input class='hiden'  name='give_back'> -->
 
                                 <input class='hiden'  name='name_for' value="<?php echo $_SESSION['name_for'][$nrr]?>">
-//czy napewno chcesz oddać tą zmianę
+<!-- czy napewno chcesz oddać tą zmianę -->
                                 <button  class='i_change_my_mind' name='give_back' value='submit'>oddaję</button>
 
                                 <?php 
