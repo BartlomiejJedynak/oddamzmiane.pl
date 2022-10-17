@@ -45,6 +45,7 @@ body {
   padding: 10px 2.5% 10px 2.5%;
 }
 .popup_for_take {
+  margin-top: 10px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -678,12 +679,18 @@ form {
   text-align: center;
   margin-top: 25px;
 }
+.show_change_box{
+  margin-top: 50px;
+}
 .change_box {
   position: fixed;
   padding-top: 20px;
   width: 100%;
-  margin-top: 125px;
-  height: 105px;
+  /* margin-top: 125px; */
+  margin-top: 255px;
+
+  /* height: 105px; */
+  height: 236px;
   background-color: rgba(31, 74, 109, 0.98);
   border-top: solid 1px black;
   border-radius: 0px 0px 5px 5px;

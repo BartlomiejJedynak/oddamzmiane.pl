@@ -40,7 +40,8 @@
             <input class='hiden'  name='idzmiany' value="<?php echo $_SESSION['id_zmiany'][$nrr]?>">
               <div class="question">         
                 <div class="change_no no_<?php echo $_SESSION['id_zmiany'][$nrr]?>">Nie</div>
-                <button  class='change_yes' name='change' value='submit'>tak</button>
+                <button  class='change_yes chg hiden' name='change' value='submit'>tak</button> <!--change my mind button-->
+                <button  class='change_yes gvb hiden' name='give_back' value='submit'>tak</button> <!-- give back button -->
               </div>          
           </div>
         </div>
@@ -112,7 +113,8 @@
                                 <!-- <input class='hiden'  name='give_back'> -->
                                 <input class='hiden'  name='name_for' value="<?php echo $_SESSION['name_for'][$nrr]?>">
 <!-- czy napewno chcesz oddać tą zmianę -->
-                                <button  class='i_change_my_mind' name='give_back' value='submit'>oddaję</button>
+            
+                                <div class="i_change_my_mind" id="change" onclick="give_back(<?php echo $_SESSION['id_zmiany'][$nrr]?>)">Oddaję</div><br>
                                 <?php 
                                 // it has to be fixed - give back shift that you took
                                 }
