@@ -686,10 +686,7 @@ form {
   position: fixed;
   padding-top: 20px;
   width: 100%;
-  /* margin-top: 125px; */
   margin-top: 255px;
-
-  /* height: 105px; */
   height: 236px;
   background-color: rgba(31, 74, 109, 0.98);
   border-top: solid 1px black;

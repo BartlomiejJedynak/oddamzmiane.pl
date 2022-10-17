@@ -7,8 +7,8 @@ function change(a){
     let chg=document.querySelector(".chg");
 
 
-    change_box.style.height = '110px';
-    change_box.style.margin= '130px 0px 0px 0px';
+    change_box.style.height = '115px';
+    change_box.style.margin= '135px 0px 0px 0px';
     show_change_box.style.margin='10px 0px 0px 0px';
     box_nr.classList.remove("hiden");
     chg.classList.remove("hiden");
