@@ -19,9 +19,9 @@ function change(a){
     })
 }
 
-function give_back(a){
-    let box=".box_"+a;
-    let no=".no_"+a;
+function give_back(b){
+    let box=".box_"+b;
+    let no=".no_"+b;
     let box_nr = document.querySelector(box);
     let change_box=document.querySelector(".change_box");
     let gvb=document.querySelector(".gvb");
