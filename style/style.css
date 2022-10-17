@@ -570,6 +570,9 @@ form {
   border: 0;
   border-radius: 5px;
   color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .change_yes {
   cursor: pointer;
@@ -680,17 +683,19 @@ form {
   margin-top: 25px;
 }
 .show_change_box{
-  margin-top: 50px;
+  margin-top: 70px;
 }
 .change_box {
   position: fixed;
-  padding-top: 20px;
+  left: 0;
+  top: 0;
+  /* padding-top: 20px; */
   width: 100%;
-  margin-top: 255px;
-  height: 236px;
-  background-color: rgba(31, 74, 109, 0.98);
-  border-top: solid 1px black;
-  border-radius: 0px 0px 5px 5px;
+  /* margin-top: 255px;
+  height: 236px; */
+  background-color: rgba(31, 74, 109, 1.98);
+ 
+  border-radius: 5px;
   color: rgb(211, 211, 211);
 }
 .confirm_box {
