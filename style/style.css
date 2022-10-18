@@ -1,8 +1,18 @@
 body {
   margin: 0;
-  background: lightblue url("back.png") no-repeat fixed center;
-  background-color: rgb(255, 98, 26);
+  content: "";
+  display: block;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  background: url("back.png") no-repeat fixed center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
+  background-color: rgb(255, 98, 26);
   background-position: 50% 0%;
   font-family: 'Montserrat', sans-serif;
 }
