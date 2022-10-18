@@ -57,7 +57,7 @@
                     <?php echo $_SESSION['zmiana_od'][$nrr]; ?> - <?php echo $_SESSION['zmiana_do'][$nrr] ?>
                 </div>
                 </div>
-                <div class="popup_for_take hiden">
+                <div class="popup_for_take popup_<?php echo $_SESSION['id_zmiany'][$nrr]?> hiden">
                   <?php
                     if($_SESSION['from_who'][$nrr]==$_SESSION['userUid']){
                   
