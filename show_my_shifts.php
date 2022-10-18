@@ -109,8 +109,7 @@
                                 ?>
                         </form> 
                 </div>
-        </div>
-        <form class="cen" action='includes/change.inc.php' method='get'>
+                <form class="cen" action='includes/change.inc.php' method='get'>
         <div class="change_box box_<?php echo $_SESSION['id_zmiany'][$nrr]?> hiden">
           <div class="show_change_box ">Czy jesteś pewien?</div>
           <div class="change_in_box">
@@ -124,6 +123,8 @@
           </div>
         </div>
       </form>
+        </div>
+
                           <?php
                           $nrr++;
                         }
