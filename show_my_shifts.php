@@ -34,20 +34,7 @@
                                                       <!-- place for form -->
 
           <div class="popup_trigger">
-          <script src="includes/change.js"></script>
-      <form class="cen" action='includes/change.inc.php' method='get'>
-        <div class="change_box box_<?php echo $_SESSION['id_zmiany'][$nrr]?> hiden">
-          <div class="show_change show_change_box_<?php echo $_SESSION['id_zmiany'][$nrr]?>">Czy jesteś pewien?</div>
-          <div class="change_in_box">
-            <input class='hiden'  name='idzmiany' value="<?php echo $_SESSION['id_zmiany'][$nrr]?>">
-              <div class="question">         
-                <div class="change_no no_<?php echo $_SESSION['id_zmiany'][$nrr]?>">Nie</div>
-                <button  class='change_yes chg<?php echo $_SESSION['id_zmiany'][$nrr]?> hiden' name='change' value='submit'>tak</button> <!--change my mind button-->
-                <button  class='change_yes gvb<?php echo $_SESSION['id_zmiany'][$nrr]?> hiden' name='give_back' value='submit'>tak</button> <!-- give back button -->
-              </div>          
-          </div>
-        </div>
-      </form>
+
                   <?php
               // if($_SESSION["is_it_taken"][$nrr]==0){ //if shift isn't taken
                 switch ($_SESSION['decision'][$nrr]) {
@@ -103,7 +90,7 @@
                                  ){
                                 ?>
 <!-- czy napewno się rozmyśliłeś??    -->
-                                <div class="i_change_my_mind" id="change" onclick="change(<?php echo $_SESSION['id_zmiany'][$nrr]?>)">anuluj</div><br>
+                                <div class="i_change_my_mind" id="change" onclick="change(<?php echo $_SESSION['id_zmiany'][$nrr]?>)">anuluj</div>
                                 <!-- <button  class='i_change_my_mind' name='change' value='submit'>rozmyśliłem się</button> -->
                                 <?php
                               }
@@ -113,7 +100,7 @@
                                 <!-- <input class='hiden'  name='give_back'> -->
                                 <!-- czy napewno chcesz oddać tą zmianę -->
             
-                                <div class="i_change_my_mind" id="change" onclick="give_back(<?php echo $_SESSION['id_zmiany'][$nrr]?>)">Oddaję</div><br>
+                                <div class="i_change_my_mind" id="change" onclick="give_back(<?php echo $_SESSION['id_zmiany'][$nrr]?>)">Oddaję</div>
                                 <?php 
                                 // it has to be fixed - give back shift that you took
                                 }
@@ -123,9 +110,23 @@
 
                 </div>
 <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-
+<script src="includes/change.js"></script>
+      <form class="cen" action='includes/change.inc.php' method='get'>
+        <div class="change_box box_<?php echo $_SESSION['id_zmiany'][$nrr]?> hiden">
+          <div class="show_change show_change_box_<?php echo $_SESSION['id_zmiany'][$nrr]?>">Czy jesteś pewien?</div>
+          <div class="change_in_box">
+            <input class='hiden'  name='idzmiany' value="<?php echo $_SESSION['id_zmiany'][$nrr]?>">
+              <div class="question">         
+                <div class="change_no no_<?php echo $_SESSION['id_zmiany'][$nrr]?>">Nie</div>
+                <button  class='change_yes chg<?php echo $_SESSION['id_zmiany'][$nrr]?> hiden' name='change' value='submit'>tak</button> <!--change my mind button-->
+                <button  class='change_yes gvb<?php echo $_SESSION['id_zmiany'][$nrr]?> hiden' name='give_back' value='submit'>tak</button> <!-- give back button -->
+              </div>          
+          </div>
+        </div>
+      </form>
 
         </div>
+
 
                           <?php
                           $nrr++;
