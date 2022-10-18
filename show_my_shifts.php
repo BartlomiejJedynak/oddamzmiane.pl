@@ -1,5 +1,4 @@
 <!-- alt.shift.php -->
-<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
 <?php                    
   $nrr=1;
@@ -35,6 +34,20 @@
                                                       <!-- place for form -->
 
           <div class="popup_trigger">
+          <script src="includes/change.js"></script>
+      <form class="cen" action='includes/change.inc.php' method='get'>
+        <div class="change_box box_<?php echo $_SESSION['id_zmiany'][$nrr]?> hiden">
+          <div class="show_change show_change_box_<?php echo $_SESSION['id_zmiany'][$nrr]?>">Czy jesteś pewien?</div>
+          <div class="change_in_box">
+            <input class='hiden'  name='idzmiany' value="<?php echo $_SESSION['id_zmiany'][$nrr]?>">
+              <div class="question">         
+                <div class="change_no no_<?php echo $_SESSION['id_zmiany'][$nrr]?>">Nie</div>
+                <button  class='change_yes chg<?php echo $_SESSION['id_zmiany'][$nrr]?> hiden' name='change' value='submit'>tak</button> <!--change my mind button-->
+                <button  class='change_yes gvb<?php echo $_SESSION['id_zmiany'][$nrr]?> hiden' name='give_back' value='submit'>tak</button> <!-- give back button -->
+              </div>          
+          </div>
+        </div>
+      </form>
                   <?php
               // if($_SESSION["is_it_taken"][$nrr]==0){ //if shift isn't taken
                 switch ($_SESSION['decision'][$nrr]) {
@@ -78,10 +91,10 @@
                     <?php }
                   } ?>
                   <!-- </div> -->
-                          <form class="cen" action='includes/change.inc.php' method='get'>
+
                               <!-- <div class='hiden'> -->
-                              <input class='hiden'  name='idzmiany' value="<?php echo $_SESSION['id_zmiany'][$nrr]?>">
-                              <script src="includes/change.js"></script>
+                                
+
                               <!-- </div> -->
                                 <?php
                               if($_SESSION['from_who'][$nrr]==$_SESSION['userUid'] and
@@ -98,8 +111,7 @@
                               if($_SESSION['decision'][$nrr]==1 and $_SESSION['for_who'][$nrr]==$_SESSION['userUid']){
                                 ?>
                                 <!-- <input class='hiden'  name='give_back'> -->
-                                <input class='hiden'  name='name_for' value="<?php echo $_SESSION['name_for'][$nrr]?>">
-<!-- czy napewno chcesz oddać tą zmianę -->
+                                <!-- czy napewno chcesz oddać tą zmianę -->
             
                                 <div class="i_change_my_mind" id="change" onclick="give_back(<?php echo $_SESSION['id_zmiany'][$nrr]?>)">Oddaję</div><br>
                                 <?php 
@@ -107,22 +119,12 @@
                                 }
                               }
                                 ?>
-                        </form> 
+
+
                 </div>
-                <form class="cen" action='includes/change.inc.php' method='get'>
-        <div class="change_box box_<?php echo $_SESSION['id_zmiany'][$nrr]?> hiden">
-          <div class="show_change_box ">Czy jesteś pewien?</div>
-          <div class="change_in_box">
-            <!-- <?php echo $_SESSION['id_zmiany'][$nrr]?> -->
-            <input class='hiden'  name='idzmiany' value="<?php echo $_SESSION['id_zmiany'][$nrr]?>">
-              <div class="question">         
-                <div class="change_no no_<?php echo $_SESSION['id_zmiany'][$nrr]?>">Nie</div>
-                <button  class='change_yes chg<?php echo $_SESSION['id_zmiany'][$nrr]?> hiden' name='change' value='submit'>tak</button> <!--change my mind button-->
-                <button  class='change_yes gvb<?php echo $_SESSION['id_zmiany'][$nrr]?> hiden' name='give_back' value='submit'>tak</button> <!-- give back button -->
-              </div>          
-          </div>
-        </div>
-      </form>
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
         </div>
 
                           <?php
