@@ -19,9 +19,8 @@
                 <div class="betw">:</div>
                     <select class="tbox" name="od_min" id="from_min">
                     <option value="00">00</option>
-                    <option value="15">15</option>
                         <?php
-                            for ($x = 30; $x <= 45; $x=$x+15) {
+                            for ($x = 15; $x <= 45; $x=$x+15) {
                         ?>
                                 <option value="<?php echo $x ?>"><?php echo $x ?></option>
                         <?php
@@ -44,9 +43,8 @@
             <div class="betw">:</div>
                     <select class="tbox" name="do_min" id="to_min">
                     <option value="00">00</option>
-                    <option value="15">15</option>
                         <?php
-                            for ($x = 30; $x <= 45; $x=$x+15) {
+                            for ($x = 15; $x <= 45; $x=$x+15) {
                         ?>
                                 <option value="<?php echo $x ?>"><?php echo $x ?></option>
                         <?php
