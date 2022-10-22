@@ -36,7 +36,6 @@
             <div class="humidity_icon i_s"></div>
             <div class="humidity"></div>              
         </div>
-            
     </div>
     <form action="includes/logout.inc.php" method="post">
         <button class="logout-button" name="logout-submit"></button>
