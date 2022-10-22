@@ -7,7 +7,7 @@ body {
   width: 100%;
   height: 100%;
   z-index: -10;
-  background: url("back.png") no-repeat fixed center;
+  background: url("back.jpg") no-repeat fixed center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -16,6 +16,56 @@ body {
   background-position: 50% 0%;
   font-family: 'Montserrat', sans-serif;
 }
+
+
+
+.flex{
+  /* transform: scale(0.7); */
+  font-size: 11px;
+  /* margin:10px; */
+  display: flex;
+  flex-direction: row;
+  /* background-color: rgba(0, 0, 0, 0.8); */
+  align-items: center;
+  /* border-radius: 5px; */
+  color: black; 
+  height: 40px;
+  font-weight: bold;
+}
+.temp,
+.temp_max,
+.temp_min,
+.wind
+{
+  margin-right: 10px;
+}
+.temp_icon{
+  background-image:url('thermometer.png');
+}
+.wind_icon{
+  background-image:url('wind.png');
+}
+.humidity_icon{
+  background-image:url('humidity.png');
+}
+.max_icon{
+  background-image:url('max.png');
+}
+.min_icon{
+  background-image:url('max.png');
+  filter: invert(1);
+  transform: rotate(180deg);
+}
+.i_s{
+  height: 20px;
+  width:20px;
+  background-size: cover;
+}
+
+.icon{
+  height: 50px;
+}
+
 .SelecCourier {
   width: 180px;
 }
@@ -36,13 +86,7 @@ body {
   display: flex;
   flex-direction: column;
 }
-.top-menu {
-  display: flex;
-  width: 100%;
-  justify-content: right;
-  background-color: rgba(255, 255, 255, 0.856);
-  height: 0;
-}
+
 .col,
 .mth {
   background-color: #0406054f;
@@ -66,6 +110,7 @@ body {
 }
 .my_shifts_menu {
   display: flex;
+  justify-content: center;
   text-align: center;
   padding-top: 15px;
   width: 100%;
@@ -73,6 +118,8 @@ body {
 .my_shifts_button {
   border: 0;
   width: 120px;
+  margin: 0;
+  padding: 0;
   height: 60px;
 }
 .my_shifts_button>div {
@@ -81,7 +128,7 @@ body {
   text-align: center;
   justify-content: center;
   height: 50px;
-  border-radius: 5px;
+  /* border-radius: 5px; */
 }
 button {
   background-color: rgba(127, 255, 212, 0);
@@ -139,7 +186,9 @@ button {
   background-color: rgba(0, 0, 0, 0.6);
   cursor: pointer;
   height: 80px;
+  margin: 0px 5px 0px 5px;
 }
+
 .button_before {
   position: fixed;
   left: 0;
@@ -151,9 +200,9 @@ button {
   align-items: center;
   width: 100%;
 }
-form {
+/* form {
   width: 100%;
-}
+} */
 .info_form_who {
   margin-top: 5px;
   font-size: 20px;
@@ -801,7 +850,7 @@ margin-top: 10px;
 }
 .shift-box {
   width: 100%;
-  margin-top: 45px;
+  /* margin-top: 45px; */
   display: flex;
   flex-direction: column;
   align-self: center;
@@ -972,9 +1021,11 @@ option {
   width: 100%;
 }
 .login-box {
+  /* background-color: rgba(0, 0, 0, 0.505); */
+  width: 100%;
   height: 40px;
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   font-size: 120%;
 }
 .hiden {
@@ -1064,7 +1115,7 @@ a {
   color: black;
 }
 .login_box {
-  display: flex;
+  /* display: flex; */
   width: 100%;
 }
 .links {
@@ -1147,10 +1198,11 @@ textarea::placeholder {
 .logout-button {
   margin-top: 5px;
   margin-right: 10px;
+  position: absolute;
+  right: 0;
   border: 0;
   width: 30px;
   height: 30px;
-  padding-right: 10px;
   background: url("logout.png");
   background-size: cover;
   cursor: pointer;
